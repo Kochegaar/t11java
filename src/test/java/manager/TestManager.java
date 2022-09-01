@@ -64,4 +64,11 @@ class ProductManagerTest {
         Product[] actual = manager.searchBy(null);
         assertArrayEquals(expected, actual);
     }
+
+    @Test
+    public void shouldFalse() {
+        Product[] expected = {};
+        Product[] actual = manager.searchBy(null);
+        assertArrayEquals(expected, actual);
+    }
 }
